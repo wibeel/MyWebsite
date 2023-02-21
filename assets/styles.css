@@ -9,7 +9,7 @@
     background-color: #222222;
   }
 
-  a {
+  a, p, h1, h2, h3 {
     color: white; 
   }
 
@@ -119,12 +119,21 @@
     background-color: #6A6A6A;
     border-radius: 0rem;
     margin-top: 25px;
+    border: none;
   }
 
   .card-img-custom{
     width: 50%;
     display: block;
     margin: 0 auto;
+  }
+
+  .card-bio {
+    background-color: #222222;
+  }
+
+  .card-bio p {
+    padding-top: 1rem;
   }
 
   .row, .col-head {
@@ -148,21 +157,25 @@
   }
   
   .footer h2{
-    color: white;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: x-large;
   }
 
   .footer a{
-    font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: large;
+    text-decoration: none;
+
   }
 
   .footer a:hover{
     text-decoration: underline; /* add underline on hover */
+    color: white;
   }
+
+
+
+
+
 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
