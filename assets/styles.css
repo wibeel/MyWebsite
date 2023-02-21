@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+  }  
+
+  /* General */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #222222;
+  }
+
+  a {
+    color: white; 
+  }
+
+  h1 {
+    font-weight: 100;
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 3em;
+    font-weight: 100
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: 100
+  }
+
+
+
+
+  
+   /* Header/logo Title */
+   .background-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('./images/pasfoto-edited-2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 60vh;  
+      background-position: center center;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /*
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      */
+      background-attachment: scroll;
+
+  }
+
+  .background-image .titel {
+    margin-top: auto;
+		margin-bottom: auto;
+    
+  }
+  .titel h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Style the top navigation bar */
+
+  nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0;
+    padding: 10px;
+  }
+  
+  nav a {
+    display: block;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #6494ed00;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+    /*outline: 2px solid rgb(255, 255, 255);*/
+    border-radius: 10px;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Change color on active */
+  .navbar a:active {
+    background-color: rgb(92, 138, 245);
+    color: black;
+  }
+
+
+ 
+  
+
+  /*Content*/
+  .container {
+    background-color: #222222;
+    color: white;
+  }
+
+  .card {
+    background-color: #6A6A6A;
+    border-radius: 0rem;
+    margin-top: 25px;
+  }
+
+  .card-img-custom{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .row, .col-head {
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #6A6A6A;
+    /*border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;*/
+  }
+  
+  .footer h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+  }
+
+  .footer a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: large;
+  }
+
+  .footer a:hover{
+    text-decoration: underline; /* add underline on hover */
+  }
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
