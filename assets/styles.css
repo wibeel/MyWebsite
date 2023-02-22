@@ -9,23 +9,42 @@
     background-color: #222222;
   }
 
-  a, p, h1, h2, h3 {
+  a, p, h1, h2, h3, h4, h5 {
     color: white; 
+    font-weight: 100;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline; /* add underline on hover */
+    color: white;
   }
 
   h1 {
-    font-weight: 100;
     font-size: 3.5em;
   }
 
   h2 {
     font-size: 3em;
-    font-weight: 100
   }
 
   h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
     font-size: 2em;
-    font-weight: 100
+  }
+
+  h5 {
+    font-size: 1.75em;
+  }
+
+  p{
+    font-size: 1.25em;
   }
 
 
@@ -37,9 +56,8 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('./images/pasfoto-edited-2.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      height: 60vh;  
+      height: 50vh;  
       background-position: center center;
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -62,6 +80,7 @@
     font-family: 'Roboto', sans-serif;
   }
   
+
   /* Style the top navigation bar */
 
   nav {
@@ -126,6 +145,18 @@
     width: 50%;
     display: block;
     margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .card-img-custom-small{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .card-img {
+    border-radius: 0rem;
   }
 
   .card-bio {
@@ -140,11 +171,21 @@
     padding: 20px;
   }
 
+  .spacing {
+    margin: 6rem;
+  }
 
+  .smallspacing{
+    margin: 4rem;
+  }
 
+  .carousel {
+    padding-top: 2rem;
+  }
 
-
-
+  .grey-background{
+    background-color: #6A6A6A;
+  }
 
 
   /* Footer */
@@ -156,21 +197,6 @@
     border-top-left-radius: 1rem;*/
   }
   
-  .footer h2{
-    font-weight: 300;
-    font-size: x-large;
-  }
-
-  .footer a{
-    font-weight: 100;
-    text-decoration: none;
-
-  }
-
-  .footer a:hover{
-    text-decoration: underline; /* add underline on hover */
-    color: white;
-  }
 
 
 

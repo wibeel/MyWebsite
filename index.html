@@ -8,7 +8,8 @@
     
 
     <!--Bootstrap 5.2-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
  
     <!--CSS-->
     <link rel="stylesheet" href="assets/styles.css">
@@ -26,12 +27,9 @@
     <!-- Nav + Banner -->
     <div class="background-image">
         <nav>
-           <!-- 
-              
-            <a href="#">Portfolio</a>
-           -->
             <a href="#resume">Resume</a>
-            <a href="#bio">BIO</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#bio">Bio</a>
             <a href="#contact">Contact</a>  
         </nav>
         <div class="titel">
@@ -47,28 +45,36 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-12">
+                <div class="spacing"></div>
                 <div class="row" id="resume">
                     <div>
                         <h2>
                             My resume
                         </h2>
-                        <h3  class="col-head">
-                                Education and experience
-                        </h3>
                     </div>
                     <div class="col">
-                        <div>
-                            
-                        </div>
+                        <div class="smallspacing"></div>
+                        <h3>
+                            Education
+                        </h3>
                         <div class="card w-100" style="width: 18rem;">
                             <img src="assets\images\ugent-logo.png" class="card-img-top card-img-custom" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">   
                                     <a href="https://studiekiezer.ugent.be/bachelor-of-science-in-de-industriele-wetenschappen-industrieel-ontwerpen/2023">
-                                     Professionele bachelor: <br> Industrieel Ingenieur: Industrieel Ontwerpen
+                                     Professional bachelor: <br> Industrial Engineer: Industrial Design
                                     </a>   
                                 </h5>
                               <p class="card-text">Universiteit Gent <br> 2021-...</p>
+                            </div>
+                        </div>
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="assets\images\vti-logo-3.png" class="card-img-top card-img-custom" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">   
+                                    Derde graad Industriële wetenschappen   
+                                </h5>
+                              <p class="card-text">VTI Torhout <br> 2019-2021</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
@@ -77,7 +83,7 @@
                                 <h5 class="card-title">   
                                     Tweede graad Wetenschappen
                                 </h5>
-                              <p class="card-text">Sint-Jozefscollege <br> 2017-2019</p>
+                              <p class="card-text">Sint-Jozefscollege Torhout<br> 2017-2019</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
@@ -91,26 +97,89 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\vti-logo-3.png" class="card-img-top card-img-custom" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">   
-                                    Derde graad Industriële wetenschappen   
-                                </h5>
-                              <p class="card-text">VTI Torhout <br> 2019-2021</p>
-                            </div>
-                        </div>
+                        <div class="smallspacing"></div>
+                        <h3>
+                            Experience
+                        </h3>
                         <div class="card w-100" style="width: 18rem;">
                             <img src="assets\images\vives-logo.png" class="card-img-top card-img-custom" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Student job: handyman</h5>
-                              <p class="card-text">2021: 4 weeks <br>2023: 3 weeks
+                              <h5 class="card-title">Student job: Handyman</h5>
+                              <p class="card-text">2021: 4 weeks <br>2023: 2 weeks
                               </p>
                             </div>
                         </div>
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="assets\images\covid-printing.jpg" class="card-img-top card-img-custom" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">3D-printing during COVID </h5>
+                              <p class="card-text">326 faceshields<br>682 earsavers</p>
+                            </div>
+                        </div>
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="assets\images\discord-logo.png" class="card-img-top card-img-custom-small" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Head moderator of a <br> 3D-printing community</h5>
+                              <p class="card-text">Since 08/2020<br> 5300 members</p>
+                            </div>
+                        </div>
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="assets\images\houtlands-jeugdharmonie.jpg" class="card-img-top card-img-custom" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Part of the board of the <br> Houtlands Jeugdensemble</h5>
+                              <p class="card-text">2020-2022</p>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
+
+                <div class="spacing"></div>
+
+                <div class="row" id="portfolio">
+                    
+                    <h2>Portfolio</h2>
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets\images\printer.jpg" class="d-block w-50" alt="...">
+                                </div>
+                               </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets\images\flightstick.jpg" class="d-block w-50" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets\images\waterkoker.jpg" class="d-block w-75" alt="...">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets\images\wallpaper.png" class="d-block w-75" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="spacing"></div>
+
                 <div class="row" id="bio">
                     <div class="col-md-2">
                         <div class="card w-100" style="width: 18rem;">
@@ -119,25 +188,15 @@
                     </div>
                     <div class="col-md-10">
                         <div class="card w-100 card-bio" style="width: 18rem;">
-                            <h5 class="card-title">Bio</h5>
+                            <h2 class="card-title">Bio</h2>
                             <p class="card-text">Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. Bio will come here. </p>
                         </div>
                     </div>
-                    <!--<div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                          <div class="col-md-4">
-                            <img src="assets\images\pasfoto-BW.jpg" class="card-img" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>-->
                 </div>
+
+                <div class="spacing"></div>
+
+                
             </div>
         </div>
     </div>
@@ -146,8 +205,8 @@
 
     <!--Footer-->
     <div class="footer" id="contact">
-        <h2>Contact</h2>
-        <p>Mail: <a href="mailto:willem.beel@ugent.be">willem.beel@ugent.be</a></p>
+        <h3>Contact</h3>
+        <h5>Mail: <a href="mailto:willem.beel@ugent.be">willem.beel@ugent.be</a></h5>
     </div>
 
 </body>
