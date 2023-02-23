@@ -187,12 +187,17 @@
     background-color: #6A6A6A;
   }
 
+  .vert-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   /* Footer */
   .footer {
     padding: 20px;
     text-align: center;
-    background: #6A6A6A;
+    background: #181818;
     /*border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;*/
   }
