@@ -14,6 +14,9 @@
     <!--CSS-->
     <link rel="stylesheet" href="assets/styles.css">
 
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <!--Roboto Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +29,28 @@
 
     <!-- Nav + Banner -->
     <div class="background-image">
-        <nav>
+        <!--<nav>
             <a href="#resume">Resume</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#bio">Bio</a>
             <a href="#contact">Contact</a>  
-        </nav>
+        </nav>-->
+
+
+        <!--Test-->
+        <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+        <!---->
+
+
+
         <div class="titel">
             <h1>
                 Hello, I'm <br> <strong>Willem Beel</strong>
@@ -58,41 +77,41 @@
                             Education
                         </h3>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\ugent-logo.png" class="card-img-top card-img-custom" alt="...">
+                            <img src="assets\images\ugent-logo.png" class="card-img-top card-img-custom" alt="Logo UGent">
                             <div class="card-body">
                                 <h5 class="card-title">   
-                                    <a href="https://studiekiezer.ugent.be/bachelor-of-science-in-de-industriele-wetenschappen-industrieel-ontwerpen/2023">
+                                    <a href="https://studiekiezer.ugent.be/bachelor-of-science-in-de-industriele-wetenschappen-industrieel-ontwerpen/2023" target="_blank">
                                      Professional bachelor: <br> Industrial Engineer: Industrial Design
                                     </a>   
                                 </h5>
-                              <p class="card-text"><a href="https://www.ugent.be/">Universiteit Gent</a><br> 2021-...</p>
+                              <p class="card-text"><a href="https://www.ugent.be/"  target="_blank">Universiteit Gent</a><br> 2021-...</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\vti-logo-3.png" class="card-img-top card-img-custom card-img-custom-small" alt="...">
+                            <img src="assets\images\vti-logo-3.png" class="card-img-top card-img-custom card-img-custom-small" alt="Logo VTI Torhout">
                             <div class="card-body">
                                 <h5 class="card-title">   
                                     Derde graad Industriële wetenschappen   
                                 </h5>
-                              <p class="card-text"><a href="https://vti.sint-rembert.be/">VTI Torhout</a><br> 2019-2021</p>
+                              <p class="card-text"><a href="https://vti.sint-rembert.be/" target="_blank">VTI Torhout</a><br> 2019-2021</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\college-logo-groot.png" class="card-img-top card-img-custom" alt="...">
+                            <img src="assets\images\college-logo-groot.png" class="card-img-top card-img-custom" alt="Logo College Torhout">
                             <div class="card-body">
                                 <h5 class="card-title">   
                                     Tweede graad Wetenschappen
                                 </h5>
-                              <p class="card-text"><a href="https://www.sintjozefscollegetorhout.be/"> Sint-Jozefscollege Torhout</a><br> 2017-2019</p>
+                              <p class="card-text"><a href="https://www.sintjozefscollegetorhout.be/" target="_blank"> Sint-Jozefscollege Torhout</a><br> 2017-2019</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\middenschool-logo-groot.png" class="card-img-top card-img-custom" alt="...">
+                            <img src="assets\images\middenschool-logo-groot.png" class="card-img-top card-img-custom" alt="Logo Middenschool Torhout">
                             <div class="card-body">
                                 <h5 class="card-title">   
                                     Eerste graad STEM-wetenschappen   
                                 </h5>
-                              <p class="card-text"><a href="https://middenschoolweb.sint-rembert.be/">Middenschool Torhout</a><br> 2014-2017</p>
+                              <p class="card-text"><a href="https://middenschoolweb.sint-rembert.be/" target="_blank">Middenschool Torhout</a><br> 2014-2017</p>
                             </div>
                         </div>
                     </div>
@@ -102,7 +121,7 @@
                             Experience
                         </h3>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\vives-logo.png" class="card-img-top card-img-custom" alt="...">
+                            <img src="assets\images\vives-logo.png" class="card-img-top card-img-custom" alt="Logo Vives">
                             <div class="card-body">
                               <h5 class="card-title">Student job: Handyman</h5>
                               <p class="card-text">2021: 4 weeks <br>2023: 2 weeks
@@ -110,30 +129,30 @@
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\covid-printing.jpg" class="card-img-top card-img-custom" alt="...">
+                            <img src="assets\images\covid-printing.jpg" class="card-img-top card-img-custom" alt="Foto Faceshields">
                             <div class="card-body">
-                              <h5 class="card-title"><a href="https://kw.be/nieuws/samenleving/vti-leerling-willem-beel-16-uit-torhout-maakt-gezichtsmaskers-met-zijn-3d-printer/">3D-printing during COVID</a></h5>
+                              <h5 class="card-title"><a href="https://kw.be/nieuws/samenleving/vti-leerling-willem-beel-16-uit-torhout-maakt-gezichtsmaskers-met-zijn-3d-printer/" target="_blank">3D-printing during COVID</a></h5>
                               <p class="card-text">326 faceshields<br>682 earsavers</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\discord-logo.png" class="card-img-top card-img-custom-small" alt="...">
+                            <img src="assets\images\discord-logo.png" class="card-img-top card-img-custom-small" alt="Logo Discord">
                             <div class="card-body">
-                              <h5 class="card-title">Head moderator of a <br> <a href="https://discord.com/servers/creality-ender-3-users-475582419861504011">3D-printing community</a></h5>
+                              <h5 class="card-title">Head moderator of a <br> <a href="https://discord.com/servers/creality-ender-3-users-475582419861504011" target="_blank">3D-printing community</a></h5>
                               <p class="card-text">Since 08/2020<br> 5300 members</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\houtlands-jeugdharmonie.jpg" class="card-img-top card-img-custom" alt="...">
+                            <img src="assets\images\houtlands-jeugdharmonie.jpg" class="card-img-top card-img-custom" alt="Logo Houtlands Jeugdharmonie">
                             <div class="card-body">
-                              <h5 class="card-title">Part of the board of the <br> <a href="http://www.houtlandsharmonieorkest.be/onze-afdelingen/houtlands-jeugdensemble">Houtlands Jeugdensemble</a></h5>
+                              <h5 class="card-title">Part of the board of the <br> <a href="http://www.houtlandsharmonieorkest.be/onze-afdelingen/houtlands-jeugdensemble" target="_blank">Houtlands Jeugdensemble</a></h5>
                               <p class="card-text">2020-2022</p>
                             </div>
                         </div>
                         <div class="card w-100" style="width: 18rem;">
-                            <img src="assets\images\coderdojo-logo.png" class="card-img-top card-img-custom card-img-custom-small" alt="...">
+                            <img src="assets\images\coderdojo-logo.png" class="card-img-top card-img-custom card-img-custom-small" alt="Logo CoderDojo">
                             <div class="card-body">
-                              <h5 class="card-title">Volunteer coach in <a href="https://coderdojo.com/en">CoderDojo</a></h5>
+                              <h5 class="card-title">Volunteer coach in <a href="https://coderdojo.com/en" target="_blank">CoderDojo</a></h5>
                               <p class="card-text">2021-...</p>
                             </div>
                         </div>
@@ -156,28 +175,28 @@
                             <div class="carousel-item active">
                                 <div class="d-flex justify-content-center">
                                     <a href="#">
-                                    <img src="assets\images\printer.jpg" class="d-block w-100" alt="...">
+                                    <img src="assets\images\printer.jpg" class="d-block w-100" alt="Upgraded Ender 3 3D printer">
                                     </a>
                                 </div>
                                </div>
                             <div class="carousel-item">
                                 <div class="d-flex justify-content-center">
                                     <a href="#">
-                                    <img src="assets\images\flightstick.jpg" class="d-block w-100" alt="...">
+                                    <img src="assets\images\flightstick.jpg" class="d-block w-100" alt="DIY Flightstick">
                                     </a>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="d-flex justify-content-center">
                                     <a href="#">
-                                    <img src="assets\images\waterkoker.jpg" class="d-block w-100" alt="...">
+                                    <img src="assets\images\waterkoker.jpg" class="d-block w-100" alt="My boiler">
                                     </a>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="d-flex justify-content-center">
                                     <a href="#">
-                                        <img src="assets\images\wallpaper.png" class="d-block w-100" alt="...">
+                                        <img src="assets\images\wallpaper.png" class="d-block w-100" alt="Blender wallpaper">
                                     </a>
                                 </div>
                             </div>
@@ -202,7 +221,7 @@
                     </div>
                     <div class="col-md-2 vert-flex">
                         <div class="card w-100 " style="width: 18rem;">
-                            <img src="assets\images\pasfoto-BW.jpg" class="card-img" alt="...">
+                            <img src="assets\images\pasfoto-BW.jpg" class="card-img" alt="Pasfoto">
                         </div>
                     </div>
                     <div class="col-md-10">
