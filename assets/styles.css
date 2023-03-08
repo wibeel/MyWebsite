@@ -79,6 +79,10 @@
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
   }
+
+  #name{
+    font-weight: 400;
+  }
   
 
   /* Style the top navigation bar */
@@ -123,8 +127,6 @@
     background-color: rgb(92, 138, 245);
     color: black;
   }
-
-
  
   
 
