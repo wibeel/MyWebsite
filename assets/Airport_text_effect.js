@@ -24,8 +24,8 @@ window.onload = function(){
           clearInterval(interval);
         }
         
-        iteration += 1 / 2;
-      }, 20);
+        iteration += 1 / 3;
+      }, 30);
     }
 
 };
