@@ -56,7 +56,7 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('./images/pasfoto-edited-2.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      height: 50vh;  
+      height: 60vh;  
       background-position: center center;
       display: flex;
       flex-direction: column;
@@ -95,6 +95,10 @@
     margin: 0px 0;
     padding: 10px;
     width: 100%;
+    position: fixed;
+    background-color: #222222;
+    top: 0;
+    transition: top 0.3s;
   }
   
   nav a {
