@@ -10,7 +10,8 @@
 
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
     <!--Bootstrap 5.2-->
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <!--<script src="assets/Airport_text_effect.js"></script>-->
     <script src="assets/hidenav.js"></script>
+    
 
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -40,28 +42,35 @@
     <div class="background-image">
 
         <!--nav-->
-        <div id="nav-placeholder">
-
-        </div>
+        <header id="navheader">
+            <div class="navcontainer"> 
+                <nav class="navbar">
+                    <a id="logo" class="nav-branding" href="index.html">
+                        <img src="assets/images/logo54.png" alt="Logo">
+                    </a>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#bio" class="nav-link">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+             </div>
+        </header>
         
-        <!--
-        <script>
-        $(function(){
-          $("#nav-placeholder").load("nav.html");
-        });
-        </script>
-        <iframe src="nav.html" scrolling="no" width="100%"></iframe>-->
-        <nav id="navbar">
-            <div id="logo">
-                <a href="index.html">
-                    <img src="assets/images/wb-logo-32x32.png" alt="Logo">
-                </a>
-            </div>
-            <a href="#resume">Resume</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#bio">Bio</a>
-            <a href="#contact">Contact</a>  
-        </nav>
 
         <div class="titel">
             <h1>
@@ -80,6 +89,77 @@
 
                 <div class="spacing"></div>
 
+                
+
+                <div class="row" id="portfolio">
+                    
+                    <h2>Portfolio</h2>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <!--
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <a href="#portfolio">
+                                        <img src="assets\images\teddy.png" class="d-block w-100" alt="Teddybear render">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <a href="#portfolio">
+                                        <img src="assets\images\wallpaper.png" class="d-block w-100" alt="Blender wallpaper">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <a href="#portfolio">
+                                        <img src="assets\images\hexa.png" class="d-block w-100" alt="Hexa wallpaper">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="spacing" ></div>
+
+                <div class="row" id="bio">
+                    <div class="col-md-2 vert-flex"></div>
+                    <div class="col-md-10">
+                        <h2 class="card-title" >Bio</h2>
+                    </div>
+                    <div class="col-md-2 vert-flex">
+                        <div class="card w-100 " style="width: 18rem;">
+                            <img src="assets\images\pasfoto-BW.jpg" class="card-img" alt="Pasfoto">
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card w-100 card-bio" style="width: 18rem;">
+                            <p class="card-text">Born and raised in Belgium, I am passionate about 3D printing and enjoy tinkering with 3D software like Siemens NX and Blender. 
+                                My interest in programming began at an early age and I have since gained knowledge in various programming languages including Python, Java, Arduino, HTML, CSS, and SQL. 
+                                When I'm not immersed in the digital world, you can find me playing my trumpet or indulging my obsession with racing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacing"></div>
+                
                 <div class="row" id="resume">
                         <h2>
                             My resume
@@ -191,82 +271,6 @@
                 </div>
 
                 <div class="spacing"></div>
-
-                <div class="row" id="portfolio">
-                    
-                    <h2>Portfolio</h2>
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <!--
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-
-                        -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-center">
-                                    <a href="#portfolio">
-                                        <img src="assets\images\teddy.png" class="d-block w-100" alt="Teddybear render">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-center">
-                                    <a href="#portfolio">
-                                        <img src="assets\images\wallpaper.png" class="d-block w-100" alt="Blender wallpaper">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-center">
-                                    <a href="#portfolio">
-                                        <img src="assets\images\hexa.png" class="d-block w-100" alt="Hexa wallpaper">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="spacing"></div>
-
-                <div class="row">
-                    <div class="col-md-2 vert-flex"></div>
-                    <div class="col-md-10">
-                        <h2 class="card-title" id="bio">Bio</h2>
-                    </div>
-                    <div class="col-md-2 vert-flex">
-                        <div class="card w-100 " style="width: 18rem;">
-                            <img src="assets\images\pasfoto-BW.jpg" class="card-img" alt="Pasfoto">
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="card w-100 card-bio" style="width: 18rem;">
-                            <p class="card-text">Born and raised in Belgium, I am passionate about 3D printing and enjoy tinkering with 3D software like Siemens NX and Blender. 
-                                My interest in programming began at an early age and I have since gained knowledge in various programming languages including Python, Java, Arduino, HTML, CSS, and SQL. 
-                                When I'm not immersed in the digital world, you can find me playing my trumpet or indulging my obsession with racing.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spacing"></div>
-
-                <div class="row">
-                    <div class="kader">
-                        
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -280,20 +284,13 @@
         <h5>Mail: <a href="mailto:willem.beel@ugent.be">willem.beel@ugent.be</a></h5>
         <div class="smallspacing"></div>
     </div>
+    
+    
+    <script src="assets/navigation.js"></script>
+    <script type = "text/javascript">
 
-<!-- 
-    <script>
-        var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-76px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-    </script> -->
+    </script>
+
 </body>
 
 </html>
