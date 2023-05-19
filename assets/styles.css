@@ -96,6 +96,7 @@
     width: 100%;
     transition: top 0.3s;
     z-index: 9999;
+    height: 70px;
   }
   
 
@@ -139,9 +140,7 @@
     color: white;
   }
   
-  .nav-link:hover{
-    color: dodgerblue;
-  }
+
   
   .hamburger{
     display: none;
