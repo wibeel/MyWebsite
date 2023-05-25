@@ -18,7 +18,8 @@ let puddleimg
 let weatherData;
 let raining = false; 
 
-
+let choices = [0, 1, 2];
+let difficulty = 2000;
 
 function preload() {
 grassimg = loadImage('robot/assets/grass.jpg');
@@ -45,8 +46,8 @@ function setup() {
   
   
   //weerdata ophalen
-    let cityID = 2794055; // City ID voor Kortrijk, België
-    let apiKey = "350fd45a54d053cd7f85ebf11b24d098"; // Vervang API_KEY door je eigen OpenWeatherMap API-sleutel
+    let cityID = 2794055; //Kortrijk
+    let apiKey = "350fd45a54d053cd7f85ebf11b24d098"; 
   
     let url = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}`;
   
@@ -124,15 +125,21 @@ function hammermovement(){
 
 function molemovement(){
   let lastmoleappear = millis()-timerappear;
-  let choices = [0, 1, 2];
   
   
-  if (lastmoleappear > 500 && moleactive == 0){
+  if (millis() < 20000){
+    difficulty = 4000000 / (millis()+2000);
+  }
+  else{
+    difficulty = 180;
+  }
+  
+  if (lastmoleappear > (difficulty) && moleactive == 0){
     timerappear = millis();
     choice = random(choices);
     mymole[choice].moley = windowHeight/2 - 100;
     moleactive = 1;
-  }else if(lastmoleappear > 1000 && moleactive == 1){
+  }else if(lastmoleappear > (2*difficulty) && moleactive == 1){
     timerappear = millis();
     mymole[choice].moley = windowHeight/2;
     moleactive = 0;
